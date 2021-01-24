@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>Final Project | Everything is Better</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<header>
+		<h1 class="a11y-hidden">Final Project</h1>
+	</header>
+	<main>
+		<div class="left-side">
+			<section>
+				<div class="js-clock clock-wrap">
+					<h2 class="a11y-hidden">Clock</h2>
+					<span class="js-clock-info clock-info">00:00</span>
+
+				</div>
+			</section>
+			<section>
+				<div class="greeting-wrap">
+					<h2 class="a11y-hidden">Greeting</h2>
+					<form action="" class="js-form form">
+						<input type="text" placeholder="What is your name?" class="js-greeting-input">
+					</form>
+					<span class="js-greeting greeting"></span>
+				</div>
+			</section>
+			<section>
+				<div class="weather-wrap">
+					<h2>Weather now: </h2>
+					<span class="js-weather weather"></span>
+				</div>
+			</section>
+		</div>
+		<div class="right-side">
+			<section>
+				<div class="todo-wrap">
+					<h2 class="a11y-hidden">To Do List</h2>
+					<form action="" class="js-toDoForm toDoForm">
+						<input type="text" placeholder="Write a to do here!" class="js-todo-input">
+					</form>
+					<div class="pending-box">
+						<h3>Pending List</h3>
+						<ul class="js-pending pending">
+						</ul>
+					</div>
+					<div class="finished-box">
+						<h3>Finished List</h3>
+						<ul class="js-finished finished">
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<script src="../js/clock.js"></script>
+	<script src="../js/greeting.js"></script>
+	<script src="../js/todo.js"></script>
+	<script src="../js/img-bg.js"></script>
+	<script src="../js/weather.js"></script>
+</body>
+</html>

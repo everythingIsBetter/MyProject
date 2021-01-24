@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/* common */
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.left-side{
+    width: 400px;
+}
+.right-side{
+    width: 300px;
+}
+
+@media screen and (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+    .left-side,
+    .right-side{
+        width: 320px;
+    }
+}
+
+input{
+    width: 180px;
+    padding: 5px 5px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'NotoSans', sans-serif;
+    font-weight: 700;
+    background-color: transparent;
+    color: #bd8b46;
+    border: 1px solid #fff;
+}
+input:focus{
+    outline: 1px solid #bd8b46;
+}
+
+/* img-bg */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: top center;
+    background-size: cover;
+    animation: fadeIn .5s linear;
+}
+
+/* clock */
+.clock-wrap{
+    padding: 50px 0;
+}
+.clock-info{
+    font-size: 4em;
+}
+/* greeting */
+.greeting-wrap{
+
+}
+.form,
+.greeting{
+    display: none
+}
+.showing{
+    display: block;
+    font-size: 2em;
+    line-height: 2em;
+}
+.js-greeting-input{
+    border: 1px solid #e1bca8;
+}
+
+/* weather */
+.weather-wrap{
+    padding: 20px 0;
+}
+.weather-wrap h2,
+.weather-wrap .weather{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 16px;
+    color: #a5a5a5;
+}
+
+/* todo */
+.toDoForm{
+    margin: 10px 10px;
+}
+.js-todo-input{
+
+}
+.pending-box,
+.finished-box{
+    margin: 0 10px 20px;
+    padding: 20px 0;
+    background-color: rgba(225, 225, 225, 0.2);
+}
+.pending button,
+.finished button{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 5px;
+    width: 60px;
+    height: 30px;
+    color: #fff;
+}
+.pending li span,
+.finished li span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 130px;
+    padding: 0 10px;
+    color: #fff;
+    text-align: left;
+}
+.btn-delete,
+.btn-pending{
+    border: none;
+    background-color: #e28685;
+}
+.pending .btn-pending {
+    background-color: #a0ade1;
+}
+.finished .btn-pending {
+    background-color: #d4b483;
+}
