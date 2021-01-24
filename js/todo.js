@@ -88,11 +88,11 @@ function paintPending(text) {
 
   delBtn.value = "delete";
   delBtn.classList.add("btn-delete");
-  delBtn.innerText = "Delete";
+  delBtn.innerText = "";
   delBtn.addEventListener("click", deleteToDo);
   penBtn.value = "pending";
   penBtn.classList.add("btn-pending");
-  penBtn.innerText = "Pending";
+  penBtn.innerText = "";
   penBtn.addEventListener("click", switchToDo);
 
   li.appendChild(span);
@@ -119,11 +119,11 @@ function paintFinished(text) {
 
   delBtn.value = "delete";
   delBtn.classList.add("btn-delete");
-  delBtn.innerText = "Delete";
+  delBtn.innerText = "";
   delBtn.addEventListener("click", deleteToDo);
   penBtn.value = "pending";
   penBtn.classList.add("btn-pending");
-  penBtn.innerText = "Pending";
+  penBtn.innerText = "";
   penBtn.addEventListener("click", switchToDo);
 
   li.appendChild(span);

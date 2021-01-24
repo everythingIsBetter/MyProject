@@ -122,27 +122,39 @@ input:focus{
     display: inline-block;
     vertical-align: middle;
     margin: 5px 5px;
-    width: 60px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
     color: #fff;
 }
-.pending li span,
-.finished li span{
+.pending li>span,
+.finished li>span{
     display: inline-block;
     vertical-align: middle;
-    width: 130px;
+    width: 180px;
     padding: 0 10px;
     color: #fff;
     text-align: left;
 }
+@media screen and (max-width: 768px){
+    .pending li>span,
+    .finished li>span{
+        width: 200px;
+    }
+}
 .btn-delete,
 .btn-pending{
     border: none;
-    background-color: #e28685;
+}
+.btn-delete{
+    background: url("../images/icon/icon-delete.png") no-repeat #d5a9a8 center/20px 20px;
+
+}
+.btn-pending{
+    background: url("../images/icon/icon-check.png") no-repeat center/20px 20px;
 }
 .pending .btn-pending {
-    background-color: #a0ade1;
+    background-color: #b7c0e4;
 }
 .finished .btn-pending {
-    background-color: #d4b483;
+    background-color: #dcc9ad;
 }
