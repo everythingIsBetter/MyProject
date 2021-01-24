@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* font */
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/noto-sans-kr-regular.eot); /* IE9 Compat Modes */
+    src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'),
+    url(../font/noto-sans-kr-regular.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+    url(../font/noto-sans-kr-regular.woff2) format('woff2'), /* Super Modern Browsers */
+    url(../font/noto-sans-kr-regular.woff) format('woff'); /* Modern Browsers */
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/noto-sans-kr-bold.eot); /* IE9 Compat Modes */
+    src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'),
+    url(../font/noto-sans-kr-bold.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+    url(../font/noto-sans-kr-bold.woff2) format('woff2'), /* Super Modern Browsers */
+    url(../font/noto-sans-kr-bold.woff) format('woff'); /* Modern Browsers */
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    margin: 0 auto;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-width: none;
+}
+
+body{
+    font-family: 'NotoSans', sans-serif;
+    word-break: keep-all;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    color: #d5cabb;
+    background-color: #2f2f2f;
+}
+ul,li{
+    list-style: none;
+}
+.a11y-hidden{
+    overflow:hidden;
+    clip:rect(1px, 1px, 1px, 1px);
+    position:absolute;
+    width:1px;
+    height:1px
+}
